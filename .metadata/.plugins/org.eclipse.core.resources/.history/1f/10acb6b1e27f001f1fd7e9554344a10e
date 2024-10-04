@@ -1,0 +1,19 @@
+package spring;
+
+public class MemberInfoPrinter {
+	
+	private MemberDao memberDao;
+	private MemberPrinter printer;
+	
+	public void printMemberInfo(String email) {
+		
+	}
+	
+	public void setMemberDao(MemberDao memberDao) {
+		this.memberDao = memberDao;
+	}
+	
+	public void setPrinter(MemberPrinter printer) {
+		this.printer = printer;
+	}
+}

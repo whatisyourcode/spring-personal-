@@ -1,0 +1,7 @@
+package spring;
+
+public class MemberInfoPrinter {
+	
+	private MemberDao = memberDao.selectByEmail(email);
+	
+}

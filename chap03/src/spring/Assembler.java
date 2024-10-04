@@ -1,0 +1,30 @@
+package spring;
+
+public class Assembler {
+	
+	private MemberDao memberDao;
+	private MemberRegisterService regSvc;
+	private ChangePasswordService pwdSvc;
+	
+	// 조립기 역할 ( 의존 주입 )
+	public Assembler() {
+		memberDao = new MemberDao();
+		regSvc = new MemberRegisterService(memberDao);
+		pwdSvc = new ChangePasswordService();
+		pwdSvc.setMemberDao(memberDao);
+	}
+	
+	public MemberDao getMemberDao() {
+		return new MemberDao();
+	}
+
+	public MemberRegisterService getMemberRegisterService() {
+		return regSvc;
+	}
+
+	public ChangePasswordService getChangePasswordService() {
+		return pwdSvc;
+	}
+	
+
+}

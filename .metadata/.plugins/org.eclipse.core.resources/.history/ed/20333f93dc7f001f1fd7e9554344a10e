@@ -1,0 +1,11 @@
+package spring;
+
+public class MemberInfoPrinter {
+	
+	private MemberDao memberDao;
+	private MemberPrinter memberPrinter;
+	
+	public void printMemberInfo(String email) {
+		
+	}
+}
