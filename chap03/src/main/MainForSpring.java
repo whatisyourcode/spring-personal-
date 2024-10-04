@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import config.AppConfImport;
 import config.AppCtx;
 import spring.Assembler;
 import spring.ChangePasswordService;
@@ -25,7 +26,7 @@ public class MainForSpring {
 	private static ApplicationContext ctx = null;
 
 	public static void main(String[] args) throws IOException {
-		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
+		ctx = new AnnotationConfigApplicationContext(AppConfImport.class);
 		
 		BufferedReader reader = 
 				new BufferedReader(new InputStreamReader(System.in));
@@ -74,7 +75,7 @@ public class MainForSpring {
 		if(!req.isPasswordEqualToConfirmPassword()) {
 			System.out.println("암호와 확인이 일치하지 않습니다.\n");
 			return;
-		}
+		}	
 		try {
 			regSvc.regist(req);
 			System.out.println("등록했습니다.");

@@ -10,14 +10,16 @@
     <fullyQualifiedTypeName name="spring.MemberNotFoundException"/>
     <fullyQualifiedTypeName name="spring.WrongIdPasswordException"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
-    <fullyQualifiedTypeName name="spring.MemberDao"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="config.AppCtx"/>
     <fullyQualifiedTypeName name="spring.MemberRegisterService"/>
     <fullyQualifiedTypeName name="spring.ChangePasswordService"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-    <fullyQualifiedTypeName name="spring.MemberPrinter"/>
     <fullyQualifiedTypeName name="spring.MemberListPrinter"/>
+    <fullyQualifiedTypeName name="spring.MemberDao"/>
+    <fullyQualifiedTypeName name="spring.MemberPrinter"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="spring.MemberInfoPrinter"/>
+    <fullyQualifiedTypeName name="spring.VersionPrinter"/>
 </qualifiedTypeNameHistroy>
